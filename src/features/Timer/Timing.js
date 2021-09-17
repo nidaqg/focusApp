@@ -17,10 +17,10 @@ export const Timing = ({ onChangeTime }) => {
 
 const styles = StyleSheet.create({
   timingBtns: {
-    flex: 1,
+    flex: 0.75,
     alignItems: 'center',
     flexDirection: 'row',
     justifyContent: 'space-around',
-    paddingBottom: 20
+    paddingBottom: 10
   },
 });

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, StyleSheet, Vibration, Platform } from 'react-native';
+import { View, Text, StyleSheet, Vibration, Platform, SafeAreaView } from 'react-native';
 import { CountDown } from '../../components/CountDown';
 import { RoundedButton } from '../../components/RoundedButton';
 import { ProgressBar } from 'react-native-paper';
@@ -49,7 +49,8 @@ export const Timer = ({ focusSub, onTimerEnd, clearSubject }) => {
   };
 
   return (
-    <View style={styles.container}>
+    <>
+    <SafeAreaView style={styles.container}>
       <View>
         <Text style={styles.task}>Focusing on:</Text>
         <Text style={styles.title}>{focusSub}</Text>
@@ -79,13 +80,15 @@ export const Timer = ({ focusSub, onTimerEnd, clearSubject }) => {
       <View style={styles.btn}>
         <RoundedButton title="Clear" size={75} onPress={() => clearSubject()} />
       </View>
-    </View>
+    </SafeAreaView>
+    </>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    marginTop: 20
   },
   title: {
     color: 'white',

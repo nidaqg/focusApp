@@ -63,7 +63,8 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     alignItems: 'center',
     justifyContent: 'center',
-    margin: 40,
+    marginHorizontal: 40,
+    marginTop: 40,
     padding: 20,
   },
   timer: {
