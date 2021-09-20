@@ -6,7 +6,7 @@ import { FocusHistory } from './src/features/focus/FocusHistory';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export default function App() {
-  const [focusSub, setFocusSub] = useState(null);
+  const [focusSub, setFocusSub] = useState('coding');
   const [focusHistory, setFocusHistory] = useState([]);
 
   //setfocushistory with state

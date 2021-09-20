@@ -14,21 +14,22 @@ export const Focus = ({ addSubject, subjectList }) => {
   return (
     <View style={styles.container}>
       <View style={styles.title}>
-        <Text style={styles.text}>What would you like to focus on?</Text>
+        <Text style={styles.text}>Let's get started! What would you like to focus on today?</Text>
         <View style={styles.inputcontainer}>
           <TextInput
             style={styles.input}
             onChangeText={handleChange}
             value={tempItem}
           />
-          <RoundedButton
-            size={50}
-            title="+"
+        </View>
+        <View style={styles.btn}>
+        <RoundedButton
+            title="Start"
             onPress={() => {
               addSubject(tempItem);
             }}
           />
-        </View>
+          </View>
       </View>
     </View>
   );
@@ -41,8 +42,9 @@ const styles = StyleSheet.create({
   text: {
     color: 'white',
     fontWeight: 'bold',
-    fontSize: 20,
+    fontSize: 24,
     paddingBottom: 20,
+    textAlign: 'center'
   },
   title: {
     flex: 1,
@@ -52,11 +54,16 @@ const styles = StyleSheet.create({
   },
   input: {
     flex: 1,
-    marginRight: 20,
+    margin: 20,
     borderRadius:5
   },
   inputcontainer: {
     flexDirection: 'row',
     alignItems: 'center',
+  },
+  btn: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    margin: 30
   }
 });

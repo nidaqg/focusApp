@@ -18,7 +18,7 @@ export const FocusHistory = ({ focusHistory, onClear }) => {
         {!!focusHistory.length && (
           <>
             <Text style={{ color: 'white', fontSize: 24, paddingBottom: 10 }}>
-              Things we have focused on:
+              Focus History:
             </Text>
 
             <FlatList

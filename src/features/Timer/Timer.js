@@ -51,7 +51,7 @@ export const Timer = ({ focusSub, onTimerEnd, clearSubject }) => {
   return (
     <>
     <SafeAreaView style={styles.container}>
-      <View>
+      <View style={styles.textcontainer}>
         <Text style={styles.task}>Focusing on:</Text>
         <Text style={styles.title}>{focusSub}</Text>
 
@@ -95,10 +95,12 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     textAlign: 'center',
     paddingBottom: 40,
+    fontSize: 30
   },
   task: {
     color: 'white',
     textAlign: 'center',
+    fontSize: 24
   },
   buttons: {
     alignItems: 'center',
@@ -111,4 +113,7 @@ const styles = StyleSheet.create({
     paddingRight: 20,
     paddingBottom: 20,
   },
+  textcontainer: {
+    paddingTop: 40
+  }
 });
