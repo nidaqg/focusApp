@@ -25,7 +25,8 @@ const styles = (size) =>
       justifyContent: 'center',
       alignItems: 'center',
       borderColor: 'white',
-      borderWidth: 2
+      borderWidth: 2,
+      backgroundColor: "#165BAA"
     },
     text: {
       color: 'white',

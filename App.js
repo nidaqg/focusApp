@@ -6,7 +6,7 @@ import { FocusHistory } from './src/features/focus/FocusHistory';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export default function App() {
-  const [focusSub, setFocusSub] = useState('coding');
+  const [focusSub, setFocusSub] = useState(null);
   const [focusHistory, setFocusHistory] = useState([]);
 
   //setfocushistory with state
@@ -80,7 +80,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#252250',
+    backgroundColor: '#0B1354',
     paddingTop: 50,
   },
 });
