@@ -14,7 +14,7 @@ export const FocusHistory = ({ focusHistory, onClear }) => {
 
   return (
     <>
-      <SafeAreaView style={{flex:1,alignItems: 'center' }}>
+      <SafeAreaView style={{flex:1,alignItems: 'center', marginTop: 100, marginBottom: 10 }}>
         {!!focusHistory.length && (
           <>
             <Text style={{ color: 'white', fontSize: 24, paddingBottom: 10 }}>
