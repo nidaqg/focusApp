@@ -10,7 +10,7 @@ export const Timer = ({ focusSub, onTimerEnd, clearSubject }) => {
   //this will keep phone 'awake' while counter is running
   useKeepAwake();
 
-  const [minutes, setMinutes] = useState(0.5);
+  const [minutes, setMinutes] = useState(5);
   const [isStarted, setIsStarted] = useState(false);
   const [progress, setProgress] = useState(1);
 

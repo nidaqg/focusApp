@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Text, View, StyleSheet } from 'react-native';
 
-export const CountDown = ({ minutes = 20, isPaused, onProgress, onEnd }) => {
+export const CountDown = ({ minutes, isPaused, onProgress, onEnd }) => {
   //convert minutes to milliseconds
   const minsToMilli = (min) => min * 1000 * 60;
 
